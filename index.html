@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Light Boxes For Photography - Professional studio setup with portable design for stunning photography results">
+    <meta name="keywords" content="light boxes, photography, studio setup, portable lighting">
+    <meta name="author" content="Light Box Photography">
+    <title>Best Light Boxes For Photography | Professional Studio Lighting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+
+        .btn-primary {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .faq-item {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        .faq-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu {
+            animation: slideDown 300ms ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .star-rating {
+            color: #fbbf24;
+        }
+
+        .benefit-image {
+            transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .benefit-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 text-center text-sm md:text-base">
+        <p class="flex items-center justify-center gap-2">
+            <i class="fas fa-shipping-fast"></i>
+            Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee
+        </p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl md:text-2xl font-bold text-gray-900 hidden sm:inline">LBP</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Search and CTA -->
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:flex items-center bg-gray-100 rounded-lg px-3 py-2 hover:bg-gray-200 transition-colors duration-300">
+                        <input type="text" placeholder="Search..." class="bg-transparent outline-none text-sm w-32 text-gray-700 placeholder-gray-500">
+                        <i class="fas fa-search text-gray-500 ml-2"></i>
+                    </div>
+                    <a href="https://lbp.com" class="hidden sm:inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold btn-primary hover:shadow-lg">
+                        Buy Now
+                    </a>
+                    <button class="mobile-menu-button md:hidden text-gray-900 p-2 hover:bg-gray-100 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
+            <nav class="flex flex-col gap-0 max-w-7xl mx-auto px-4 py-4">
+                <a href="#home" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">Home</a>
+                <a href="#features" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-600 py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium">Contact</a>
+                <a href="https://lbp.com" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-3 rounded-lg font-semibold btn-primary hover:shadow-lg mt-4 text-center">
+                    Buy Now
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen md:h-96 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Professional photography studio setup" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative h-full flex items-center justify-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                    Best Light Boxes For Photography
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed font-light">
+                    Professional Studio Setup with Portable Design
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://lbp.com" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold btn-primary hover:shadow-2xl text-lg inline-block">
+                        Shop Now
+                    </a>
+                    <a href="#features" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold btn-primary hover:shadow-lg text-lg inline-block hover:bg-gray-50 transition-colors duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Our Light Boxes?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Experience professional-grade lighting solutions designed for photographers of all levels
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Feature 1: Professional Studio Setup -->
+                <div class="feature-card bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional Studio Setup</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Get broadcast-quality lighting with our professional-grade light boxes. Engineered with precision diffusion technology to eliminate harsh shadows and create perfectly balanced illumination for product photography, portraits, and studio work.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>5500K daylight color temperature</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>CRI 95+ for accurate colors</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Flicker-free LED technology</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Portable Design -->
+                <div class="feature-card bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cube text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Portable Design</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Take your studio anywhere with our lightweight yet durable construction. Designed for photographers on the move, featuring quick-setup assembly and compact storage without compromising on performance or light quality.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Ultra-lightweight aluminum frame</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Folds flat for easy transport</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Includes carrying case</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Transform Your Photography
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover how our light boxes can elevate your creative work
+                </p>
+            </div>
+
+            <!-- Benefit 1: Professional Results -->
+            <div class="mb-20 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Professional Results</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Achieve studio-quality photographs with consistent, professional lighting. Our light boxes produce perfectly balanced illumination that brings out the best in every subject, from delicate jewelry to intricate product details.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-star text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Eliminate Harsh Shadows</h4>
+                                    <p class="text-gray-600">Advanced diffusion technology creates soft, even lighting</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-star text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">True Color Reproduction</h4>
+                                    <p class="text-gray-600">CRI 95+ ensures accurate color representation</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-star text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Reduced Post-Processing</h4>
+                                    <p class="text-gray-600">Get it right in camera with perfect lighting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://lbp.com" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold btn-primary hover:shadow-lg inline-block w-fit">
+                            Explore Professional Series
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Professional photography results with light box" class="w-full h-full object-cover benefit-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Setup Anywhere -->
+            <div class="mb-20 bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="overflow-hidden order-1">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Portable light box setup anywhere" class="w-full h-full object-cover benefit-image">
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center order-2">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Setup Anywhere</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Freedom to shoot from any location. Whether you're in a studio, home office, outdoor venue, or client site, our portable light boxes set up in minutes without requiring complex equipment or technical expertise.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Quick Assembly</h4>
+                                    <p class="text-gray-600">Set up your complete studio in under 5 minutes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">No Special Requirements</h4>
+                                    <p class="text-gray-600">Works with standard power outlets worldwide</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Compact Storage</h4>
+                                    <p class="text-gray-600">Folds down to fit in any vehicle or closet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://lbp.com" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold btn-primary hover:shadow-lg inline-block w-fit">
+                            View Portable Options
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Portable Studio -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Portable Studio</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Complete lighting solution in a compact package. Transform any space into a professional photography studio with our all-in-one light box systems. Perfect for freelancers, content creators, and professionals who demand flexibility without sacrificing quality.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-lightbulb text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">All-in-One Solution</h4>
+                                    <p class="text-gray-600">Everything you need in one integrated system</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-lightbulb text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Professional Quality</h4>
+                                    <p class="text-gray-600">Studio-grade performance in portable form</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-lightbulb text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">Cost Effective</h4>
+                                    <p class="text-gray-600">Eliminate expensive studio rental fees</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://lbp.com" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold btn-primary hover:shadow-lg inline-block w-fit">
+                            Get Your Studio Today
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Complete portable studio setup" class="w-full h-full object-cover benefit-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-purple-600 to-blue-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Photography background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Elevate Your Photography?
+            </h2>
+            <p class="text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of photographers who have transformed their work with our professional light boxes
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://lbp.com" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold btn-primary hover:shadow-2xl text-lg inline-block hover:bg-gray-50 transition-colors duration-300">
+                    Shop Now
+                </a>
+                <a href="#contact" class="bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold btn-primary hover:shadow-lg text-lg inline-block hover:bg-purple-800 transition-colors duration-300 border-2 border-white">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Light Box Photography
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 rounded-2xl border border-gray-200 shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Founded in 2015 by a collective of professional photographers and lighting engineers, Light Box Photography emerged from a simple mission: to democratize access to professional-grade lighting equipment. Our founders recognized that talented photographers were limited not by skill, but by equipment availability and cost. Over the past eight years, we've refined our designs through thousands of hours of testing and feedback from photographers worldwide. Today, we're proud to offer lighting solutions that rival studio equipment costing three times as much, making professional photography accessible to everyone from hobbyists to established studios.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 md:p-12 rounded-2xl border border-purple-200 shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        We believe that exceptional photography should not be limited by budget or location. Our mission is to empower photographers at every level by providing innovative, affordable, and reliable lighting solutions that inspire creativity and deliver professional results. We're committed to continuous innovation, sustainability, and building a community of photographers who push the boundaries of what's possible. Every product we create is guided by our core values: quality without compromise, accessibility for all, and unwavering support for our customers' creative journey.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">50K+</div>
+                    <p class="text-gray-600 font-medium">Happy Photographers</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">8+</div>
+                    <p class="text-gray-600 font-medium">Years in Business</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">100%</div>
+                    <p class="text-gray-600 font-medium">Satisfaction Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Loved by Photographers Worldwide
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    See what professional photographers are saying about our light boxes
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "I've been using the Professional Studio light box for 6 months now, and it has completely transformed my product photography business. The color accuracy is incredible – I've reduced my post-processing time by 40%, which means more time to focus on creative shots. The portability is a game-changer; I can now shoot at client locations with the same quality as my studio. Best investment I've made!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">SR</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah Rodriguez</p>
+                            <p class="text-sm text-gray-600">Product Photographer, E-commerce Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "As a freelance portrait photographer, I needed something I could transport between client locations. This portable light box set up perfectly in their homes without looking bulky or unprofessional. My clients have noticed the difference in photo quality immediately. The CRI 95+ means their skin tones look natural and beautiful every single time. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-pink-600 to-red-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">JM</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">James Mitchell</p>
+                            <p class="text-sm text-gray-600">Portrait Photographer & Educator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "I started my jewelry photography business from home, and these light boxes were essential to my success. The diffusion is perfect – no more glare on diamonds and precious stones. I've quadrupled my monthly revenue since upgrading to professional lighting. The investment paid for itself in the first month of increased sales. This is what separates amateur from professional work."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">EC</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Emma Chen</p>
+                            <p class="text-sm text-gray-600">Jewelry Photographer & Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                            <i class="fas fa-star star-rating"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "Our photography school invested in these light boxes for our studio, and our students' work has improved dramatically. The consistent, professional lighting environment allows them to focus on composition and technique without worrying about lighting variables. Parents can see the difference in graduation portfolios. We've increased enrollment by 30% this year. Worth every penny!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-teal-600 to-green-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">MK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Michael Khan</p>
+                            <p class="text-sm text-gray-600">Photography School Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Find answers to common questions about our light boxes and photography solutions
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-900 text-left">
+                            What is the color temperature of your light boxes?
+                        </h3>
+                        <i class="fas fa-chevron-down text-purple-600 flex-shrink-0 ml-4 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 md:px-8 pb-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Our light boxes feature a 5500K daylight color temperature, which is the standard for professional photography and matches natural daylight. This ensures that your photos will look accurate whether you're shooting products, portraits, or any other subject. The flicker-free LED technology also provides consistent, stable lighting throughout your entire shoot, eliminating the color shifts that can occur with traditional lighting equipment. All our lights are calibrated to CRI 95+ for true color reproduction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-900 text-left">
+                            How long does it take to set up the light box?
+                        </h3>
+                        <i class="fas fa-chevron-down text-purple-600 flex-shrink-0 ml-4 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 md:px-8 pb-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Our portable light boxes are designed for quick and easy assembly. Most users can have their complete setup ready in 3-5 minutes. The frame uses a tool-free assembly system with intuitive snap-fit connectors, and the diffusion panels attach securely without any complicated steps. The LED lights are pre-installed and simply plug into standard power outlets. We include detailed setup instructions with every unit, and our customer support team is always available if you need additional guidance. After a few uses, the setup becomes second nature!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-900 text-left">
+                            Are your light boxes compatible with all camera types?
+                        </h3>
+                        <i class="fas fa-chevron-down text-purple-600 flex-shrink-0 ml-4 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 md:px-8 pb-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Absolutely! Our light boxes are completely camera-agnostic. They work perfectly with DSLRs, mirrorless cameras, smartphones, and even film cameras. The lighting is consistent and professional regardless of your equipment. Since we provide the light source, your camera simply captures what's illuminated. Many of our customers use multiple camera types with the same light box setup. The professional quality of our lighting means you'll get excellent results whether you're shooting with a $300 smartphone or a $5,000 professional camera. The difference will be in your camera's capabilities, not the lighting quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-purple-300 transition-colors duration-300">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-900 text-left">
+                            What is your return policy and warranty?
+                        </h3>
+                        <i class="fas fa-chevron-down text-purple-600 flex-shrink-0 ml-4 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 md:px-8 pb-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            We stand behind our products with a 100% satisfaction guarantee. If you're not completely happy with your light box for any reason, you can return it within 30 days for a full refund – no questions asked. All our light boxes come with a 2-year manufacturer's warranty covering defects in materials and workmanship. We also offer extended warranty options and a comprehensive replacement program for accidental damage. Our customer support team is available to help with any issues, and we pride ourselves on fast, hassle-free service. Most warranty claims are processed within 48 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gradient-to-r from-purple-50 to-blue-50 p-8 md:p-12 rounded-2xl border border-purple-200">
+                <p class="text-center text-gray-600 mb-4">
+                    Still have questions? We're here to help!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:admin@lbp.com" class="flex items-center justify-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors duration-300">
+                        <i class="fas fa-envelope"></i>
+                        Email us at admin@lbp.com
+                    </a>
+                    <span class="hidden sm:block text-gray-400">•</span>
+                    <a href="https://lbp.com" class="flex items-center justify-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300">
+                        <i class="fas fa-globe"></i>
+                        Visit our website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-md">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-all duration-300" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-all duration-300" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-all duration-300" placeholder="How can we help?">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition-all duration-300 resize-none" placeholder="Tell us more..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold btn-primary hover:shadow-lg transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+                                <a href="mailto:admin@lbp.com" class="text-purple-600 hover:text-purple-700 transition-colors duration-300 font-medium">
+                                    admin@lbp.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-globe text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Website</h3>
+                                <a href="https://lbp.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 transition-colors duration-300 font-medium">
+                                    https://lbp.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl border border-indigo-200">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Response Time</h3>
+                                <p class="text-gray-600">
+                                    We typically respond to all inquiries within 24 hours during business days.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-headset text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Support</h3>
+                                <p class="text-gray-600">
+                                    Our customer support team is available to assist with product questions, orders, and technical support.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">LBP</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Professional light boxes and photography studio solutions for creators worldwide.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://lbp.com" class="text-gray-400 hover:text-white transition-colors duration-300">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="mailto:admin@lbp.com" class="text-gray-400 hover:text-white transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Policies</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Return Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400">
+                            &copy; <span id="year">2024</span> Light Box Photography. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
+                        <span class="text-gray-400 text-sm">
+                            <i class="fas fa-shipping-fast text-purple-600 mr-2"></i>
+                            Fast Worldwide Shipping
+                        </span>
+                        <span class="text-gray-400 text-sm">
+                            <i class="fas fa-lock text-purple-600 mr-2"></i>
+                            Secure Checkout
+                        </span>
+                        <span class="text-gray-400 text-sm">
+                            <i class="fas fa-redo text-purple-600 mr-2"></i>
+                            Easy Returns
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menu when a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item.active').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current FAQ
+            if (isActive) {
+                faqItem.classList.remove('active');
+                button.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+            } else {
+                faqItem.classList.add('active');
+                button.querySelector('.fa-chevron-down').style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const element = document.querySelector(href);
+                    if (element) {
+                        element.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .testimonial-card, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
